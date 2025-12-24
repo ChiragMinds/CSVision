@@ -1,0 +1,7 @@
+streamlit
+pandas
+python-dotenv
+faiss-cpu
+sentence-transformers
+google-genai
+dotenv

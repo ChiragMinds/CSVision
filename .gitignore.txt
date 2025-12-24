@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+myenv/
+
+# Node / frontend (if any)
+node_modules/
+
+# ML / data
+data/
+models/
+*.pkl
+*.pt
+*.pth
+
+# OS
+.DS_Store
+Thumbs.db
