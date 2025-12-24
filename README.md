@@ -37,15 +37,28 @@ This repository is intended for **educational, demonstration, and portfolio use*
 ```bash
 CSVision/
 │
-├── app.py                     # Streamlit application entry point
-├── services/                  # Core application logic
-│   ├── gemini_client.py       # Google Gemini client wrapper
-│   ├── insights.py            # Insight generation logic
+├── app.py                     # Streamlit app entry point
+├── services/                  # Core backend logic
+│   ├── __init__.py
+│   ├── analyzer.py            # CSV analytical operations
+│   ├── csv_loader.py          # CSV loading and preprocessing
+│   ├── gemini_client.py       # Google Gemini API wrapper
+│   ├── insights.py            # AI-generated insights
+│   ├── profiling.py           # Dataset profiling logic
 │   ├── summarizer.py          # CSV summarization logic
-│   └── analyzer.py            # Data analysis utilities
-├── requirements.txt           # Python dependencies  
+│   └── vector_store.py        # FAISS vector store handling
+│
+├── ui/                        # Streamlit UI components
+│   ├── analyze_ui.py
+│   ├── chat_ui.py
+│   ├── profile_ui.py
+│   └── summary_ui.py
+│
+├── .env                       # Environment variables (not tracked)
 ├── .gitignore
-└── README.md
+├── requirements.txt
+├── README.md
+└── CSVision_Dashboard.png     # Application screenshot
 ```
 
 ---
@@ -60,24 +73,6 @@ CSVision/
   - Extract insights, trends, and observations from structured data
 
 > Note: All outputs are **AI-assisted interpretations** and should be reviewed for accuracy before making decisions.
-
----
-
-## 🧪 Requirements
-
-- Python 3.9+
-- Streamlit
-- Pandas
-- google-genai
-- FAISS
-- Sentence Transformers
-- python-dotenv
-
-Install dependencies using:
-
-```bash
-pip install -r requirements.txt
-```
 
 ---
 
