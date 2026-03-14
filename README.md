@@ -80,7 +80,7 @@ CSVision/
 
 ### Clone the repository
 ```bash
-git clone https://github.com/your-username/CSVision.git
+git clone https://github.com/ChiragMinds/CSVision.git
 cd CSVision
 ```
 ### Create and activate a virtual environment
